@@ -111,8 +111,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 	<p>Do you have a fever?</p>
-	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-	<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+<!-- I had to make sure to switch the components that corresponded with "yes" and "no" below so I could get accurate results. I used this technique whenever the "yes" corresponded with the symptoms of a cold.
+ -->
+	<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
 	</div>
 </div>
 	
@@ -123,8 +125,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Do you have a sore throat?</p>    
-	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-	<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+	<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
 	</div>
 </div>
 	
@@ -160,9 +162,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-        <p>Have you been experiencing symptoms for more than 10 days?</p> 
-	<a href="#seven"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-	<a href="#seven"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+        <p>If you have a runny nose, is the mucus thick/yellow?</p> 
+	<a href="#seven"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+	<a href="#seven"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
 	</div>
 </div>
 
@@ -173,12 +175,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
         <p>Have you been experiencing symptoms for more than 10 days?</p> 
-	<a href="#eight"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-	<a href="#eight"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+	<a href="#calculation"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+	<a href="#calculation"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
 	</div>
 </div>
 
-<div class="page" id="eight">
+<div class="page" id="calculation">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Your results are being calculated.</h1>
 	</div>
