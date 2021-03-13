@@ -36,7 +36,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
+        var allergy_count = 0;//I can comment with "//" because this is the JavaScript part of my code
         var cold_count = 0;
 
 
@@ -51,8 +51,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	function resultscalculator(){
 	var resultText = document.getElementById("results");
-	var allergyPercent = (allergy_count / (allergy_count + cold_count)) * 100;
-	var coldPercent = (cold_count / (allergy_count + cold_count)) * 100;
+	var allergyPercent = (allergy_count / (allergy_count + cold_count)) * 100;//calculates allergyPercent
+	var coldPercent = (cold_count / (allergy_count + cold_count)) * 100;////calculates coldPercent
 	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%";
 	}
 	
@@ -83,6 +83,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </style>
 
 <body>
+<!--  I now comment with "<!--[message] -->" <!--because this is the JavaScript part of my code
+ -->
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>Cold or Allergies?</h1>
 </div>
@@ -92,7 +94,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<a href="#one" class="w3-btn w3-light-blue w3-round"> Get Started </a>
 	
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	
@@ -102,10 +104,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
 	</div>
-	
+<!-- Every time the onclick="coldAdd();" appears, it adds (1) to the stored number of answers that support the user having allergies or a cold. At the beginning of the questionnaire, this number is 0.
+ -->	
     	<div id="content" class="w3-container">
         <p>Are your eyes watery or itchy?</p>    
-	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-blue-grey w3-round"> Yes</a>
+	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-blue-grey w3-round"> Yes</a> <!--Changed button color and style! -->
 	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-blue-grey w3-round">No</a>
 	</div>
 </div>
@@ -173,7 +176,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<a href="#results"  onclick="allergyAdd();" class="w3-btn w3-blue-grey w3-round">No</a>
 	</div>
 </div>
-
+<!-- I made several attempts to see which format worked best to display my results ("Do I add an extra page, or not?"). Decided on no extra page.
+ -->
 
 <div class="page" id="results">
 	<div id="header" class="w3-container w3-flat-carrot">
@@ -183,12 +187,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
         	<p> Click below to see your results.</p> 
 		<a href="#results" onclick="resultscalculator();" class="w3-btn w3-blue-grey w3-round"> Results! </a>
-		
+		<!-- I linked the "resultscalculator" function above to link it to the formula and variables I developed in the script section
+ -->
 	</div>
 </div>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
+	<p>This questionnaire is not intended to diagnose COVID-19. If you believe you are showing symptoms of COVID-19, please consult your medical provider.</p>
 </footer>
 
 </body>
