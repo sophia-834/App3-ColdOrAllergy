@@ -17,10 +17,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The goal is to make an app that might help someone figure out if they have allergies or a cold via probability based on their symptoms.
  
 Known Issues:
-blah, blah, blah, blah
+Color scheme is not very cohesive, percentages at the end are not displayed aesthetically, code is not able to accurately diagnose a person; they must seek professional advice.
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -49,7 +49,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 	
-	function resultscalculator(){
+	function resultscalculator(){//this is what will do the math for me
 	var resultText = document.getElementById("results");
 	var allergyPercent = (allergy_count / (allergy_count + cold_count)) * 100;//calculates allergyPercent
 	var coldPercent = (cold_count / (allergy_count + cold_count)) * 100;////calculates coldPercent
@@ -187,7 +187,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
         	<p> Click below to see your results.</p> 
 		<a href="#results" onclick="resultscalculator();" class="w3-btn w3-blue-grey w3-round"> Results! </a>
-		<!-- I linked the "resultscalculator" function above to link it to the formula and variables I developed in the script section
+		<!-- I linked the "resultscalculator" function above to link it to the formula and variables I developed in the script section. Pressing the "Results!" button will trigger the event.
  -->
 	</div>
 </div>
