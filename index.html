@@ -50,7 +50,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 	
 	function resultscalculator(){
-	var resultText = dovument.getElementById("results");
+	var resultText = dovument.getElementById("finalresults");
 	var allergyPercent = (allergy_count / (allergy_count + cold_count)) * 100;
 	var coldPercent = (cold_count / (allergy_count + cold_count)) * 100;
 	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" "<br> Probability it is a cold =" + coldPercent + "%";
@@ -199,12 +199,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="results">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Your results are being calculated.</h1>
+		<h1>Here are your results.</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
-        <p>resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; </p> 
-	<a href="#results" class="w3-btn w3-black"> Results </a>
+        <p> id="finalresults"</p> 
+		<a onclick="resultscalultor();" class="w3-container w3-flat-carrot"> Results! </a>
+		
 	</div>
 </div>
 	
